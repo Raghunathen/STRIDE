@@ -1,3 +1,3 @@
 # STRIDE
 
-test
+Yet To Write
