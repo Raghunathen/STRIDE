@@ -166,3 +166,4 @@ Dataset/
 training_images/
 temp_trash/
 .DS_Store
+.gitignore

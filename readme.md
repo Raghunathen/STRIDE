@@ -1,3 +1,3 @@
 # STRIDE
 
-Yet To Writeasc
+Yet To Write
