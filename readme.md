@@ -1,3 +1,3 @@
 # STRIDE
 
-Yet To Write
+Findings and Experiments will be updated here.
