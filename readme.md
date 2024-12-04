@@ -1,5 +1,7 @@
 # Project Overview
 
+**STRIDE**, “Surfer’s Tactical Response and Decision Engine” is a DL model that classifies images with fine, minute details—at real-time speeds. What does that mean? Well... it’s a bot that plays Subway Surfers! It leverages convolutional neural networks (CNNs) for image classification to make quick decisions, such as moving up, down, left, right, or staying still (no-op). Through iterative experiments with architecture, data preprocessing, and training strategies, STRIDE aims to be a infinite runner. A Far Fetched aim. 
+
 ## **Files and Functionality**
 - **Taker.py**: Captures and saves images.
 - **Flipper.py**: Augments the dataset by flipping images to generate additional samples.
