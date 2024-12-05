@@ -32,7 +32,7 @@
 
 ## **STRIDE 1**
 ### **Architecture**
-- 4 Conv Layers: 32 kernels each.
+- 4 Conv Layers: 32 kernels each. 3x3 Kernels.
 
 ### **Performance**
 - 10 Epochs achieved ~85% accuracy.
@@ -94,7 +94,19 @@
 #### **Performance**
 - Epoch 5: Loss = 0.3382, Accuracy = 81.55%.
 - Epoch 10: Loss = 0.3145, Accuracy = 89.14%.
-- **Observation**: Performance similar to 3.3. Threshold for trainable parameters seems optimal. Tweaking kernel sizes could improve results. Switching to black-and-white images is the next step to mitigate errors caused by color variations.
+- **Observation**: Performance similar to 3.3. Threshold for trainable parameters seems optimal. Tweaking kernel sizes could improve results. 
+
+---
+
+### **3.5**
+#### **Architecture**
+- 4 Conv Layers: (32, 32, 32,  8) with 5x5 Kernels.
+- Total Trainable Parameters: **163,277**.
+
+#### **Performance**
+- Epoch 5: Loss = 0.3430, Accuracy = 80.32%.
+- Epoch 10: Loss = 0.3199, Accuracy = 87.65%.
+- **Observation**: Increasing kernel size, Switching to black-and-white images is the next step to mitigate errors caused by color variations.
 
 ---
 
