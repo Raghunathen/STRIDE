@@ -123,7 +123,8 @@
 - Epoch 5: Loss = 0.3520, Accuracy = 77.10%.
 - Epoch 10: Loss = 0.3264, Accuracy = 85.46%.
 - **Observation**: The intuition behind using black-and-white images is to help the model generalize better. However, the current performance isn't on par with our best model (3.3). The next step is to train the model further and tweak the architecture. Reducing the number of parameters might be sufficient. We'll run a few more epochs and reassess before making a final decision.
-
+- Epoch 20: Loss = 0.3092, Accuracy = 90.73%
+- **Observation**: The model shows improved performance compared to earlier epochs but exhibits signs of overfitting in specific scenarios. To verify this, it was tested on a validation set, yielding a high loss of **1.0400**, which confirmed the hypothesis. The next step is to reduce the number of parameters to mitigate overfitting and prevent excessive learning.
 
 ---
 
