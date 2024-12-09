@@ -110,9 +110,20 @@
 
 ---
 
-## **STRIDE 4 (YTD)**
+## **STRIDE 4**
 ### **Experiment**
 - Converted images to grayscale (black-and-white) for training.
+
+### **4.1**
+#### **Architecture**
+- 4 Conv Layers: (32, 32, 32, 8) with 3x3 Kernels
+- Total Trainable Parameters: **169,933**.
+
+#### **Performance**
+- Epoch 5: Loss = 0.3520, Accuracy = 77.10%.
+- Epoch 10: Loss = 0.3264, Accuracy = 85.46%.
+- **Observation**: The intuition behind using black-and-white images is to help the model generalize better. However, the current performance isn't on par with our best model (3.3). The next step is to train the model further and tweak the architecture. Reducing the number of parameters might be sufficient. We'll run a few more epochs and reassess before making a final decision.
+
 
 ---
 
