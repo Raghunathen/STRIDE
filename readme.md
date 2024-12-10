@@ -128,6 +128,17 @@
 
 ---
 
+### **4.2**
+#### **Architecture**
+- 2 Conv Layers: (32, 8) with 3x3 Kernels
+- Total Trainable Parameters: **157,797**.
+
+#### **Performance**
+- Epoch 5: Loss = 0.3891, Accuracy = 64.81%.
+- Epoch 10: Loss = 0.3582, Accuracy = 74.82%.
+- **Observation**: To reduce the number of parameters, the image size was decreased. However, this required reducing the number of convolutional layers, as the image dimensions shrank below 5×55×5. While this adjustment lowered the parameter count, the model failed to learn effectively due to insufficient capacity. The next step is to experiment further with the number of layers and kernel sizes to find the right balance before considering a switch to Canny edge detection.
+
+
 ## **STRIDE 5 (YTD)**
 ### **Experiment**
 - Applied Canny edge detection for preprocessing the images.
