@@ -130,13 +130,25 @@
 
 ### **4.2**
 #### **Architecture**
-- 2 Conv Layers: (32, 8) with 3x3 Kernels
+- 2 Conv Layers: (32,32) with 3x3 Kernels
 - Total Trainable Parameters: **157,797**.
 
 #### **Performance**
 - Epoch 5: Loss = 0.3891, Accuracy = 64.81%.
 - Epoch 10: Loss = 0.3582, Accuracy = 74.82%.
-- **Observation**: To reduce the number of parameters, the image size was decreased. However, this required reducing the number of convolutional layers, as the image dimensions shrank below 5×55×5. While this adjustment lowered the parameter count, the model failed to learn effectively due to insufficient capacity. The next step is to experiment further with the number of layers and kernel sizes to find the right balance before considering a switch to Canny edge detection.
+- **Observation**: To reduce the number of parameters, the image size was decreased (224x224 -> 32x32). However, this required reducing the number of convolutional layers, as the image dimensions shrank below 5×55×5. While this adjustment lowered the parameter count, the model failed to learn effectively due to insufficient capacity. The next step is to experiment further with the number of layers and kernel sizes to find the right balance before considering a switch to Canny edge detection.
+
+---
+
+### **4.3**
+#### **Architecture**
+- 3 Conv Layers: (32, 32, 32) with 3x3 Kernels
+- Total Trainable Parameters: **167,045**.
+
+#### **Performance**
+- Epoch 5: Loss = 0.3682, Accuracy = 71.47%.
+- Epoch 10: Loss = 0.3425, Accuracy = 80.14%.
+- **Observation**: The image size was increased 32x32 -> 64x64) and an additional convolutional layer with 32 kernels was added. This adjustment significantly improved performance compared to the previous Version 4 models. The model demonstrates promising real-time performance, so further training is planned to refine its movements and enhance overall results.
 
 
 ## **STRIDE 5 (YTD)**
