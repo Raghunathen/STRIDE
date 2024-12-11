@@ -7,6 +7,7 @@
 - **Flipper.py**: Augments the dataset by flipping images to generate additional samples.
 - **Play_again.py**: Automates the model loop for continuous runs.
 - **Models.ipynb**: Contains all model architecture definitions.
+- **transform.ipynb**: Contains all transform settings for the all induivual models.
 - **Training.ipynb**: Implements the training loop, evaluation, and related tasks.
 
 ## **Dataset Details**
@@ -149,7 +150,11 @@
 - Epoch 5: Loss = 0.3682, Accuracy = 71.47%.
 - Epoch 10: Loss = 0.3425, Accuracy = 80.14%.
 - **Observation**: The image size was increased 32x32 -> 64x64) and an additional convolutional layer with 32 kernels was added. This adjustment significantly improved performance compared to the previous Version 4 models. The model demonstrates promising real-time performance, so further training is planned to refine its movements and enhance overall results.
+- Epoch 15: Loss = 0.3279, Accuracy = 82.62%.
+- Epoch 20: Loss = 0.3199, Accuracy = 87.44%.
+- **Observation**: The model performs well, showing a significant improvement from Version 4.1, which supports our hypothesis that grayscale images enhance performance. However, there are indications that the model might be learning some noise from the images. To address this, transitioning to Canny edge detection in Stride 5 appears to be a promising next step.
 
+---
 
 ## **STRIDE 5 (YTD)**
 ### **Experiment**
