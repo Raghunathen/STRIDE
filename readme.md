@@ -156,6 +156,24 @@
 
 ---
 
-## **STRIDE 5 (YTD)**
+## **STRIDE 5**
 ### **Experiment**
 - Applied Canny edge detection for preprocessing the images.
+
+---
+
+### **5.1**
+#### **Architecture**
+- 3 Conv Layers: (32, 32, 32) with 3x3 Kernels
+- Total Trainable Parameters: **167,045**.
+
+#### **Performance**
+- Epoch 5: Loss = 0.3619, Accuracy = 73.95%.
+- Epoch 10: Loss = 0.3367, Accuracy = 81.81%.
+- **Observation**: The model achieved good training accuracy but predominantly predicts "noop" and "right," likely due to insufficient network depth or the small image size limiting feature extraction. Increasing layers or resolution may improve performance.
+
+---
+
+
+
+

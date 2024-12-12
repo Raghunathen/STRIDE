@@ -166,3 +166,5 @@ Dataset/
 training_images/
 temp_trash/
 .DS_Store
+dummy.png
+canny_images
