@@ -175,5 +175,6 @@
 ---
 
 
-
+### **Optimizations**
+Multiple Trainers and models.py will be removed and changed to a single class
 
