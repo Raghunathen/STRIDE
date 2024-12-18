@@ -172,6 +172,8 @@
 - Epoch 10: Loss = 0.3367, Accuracy = 81.81%.
 - **Observation**: The model achieved good training accuracy but predominantly predicts "noop" and "right," likely due to insufficient network depth or the small image size limiting feature extraction. Increasing layers or resolution may improve performance.
 
+
+-- 5.2 and 5.3 needs to be added
 ---
 
 
